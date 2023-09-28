@@ -35,6 +35,35 @@ header li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 508px;
+    overflow: hidden;
+    position: relative;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-banner{
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+}
+.product-banner::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
 }
 h1{
     font-size: 56px;
